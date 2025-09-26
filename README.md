@@ -20,6 +20,14 @@ This website includes:
 - Updated README with Harvard references.
 
 ---
+##Screenshots
+Screenshots of website tested on:
+-Desktop(full layout)<img width="1917" height="976" alt="Screenshot 2025-09-26 092535" src="https://github.com/user-attachments/assets/4a356ce0-7360-4b9e-8161-7deb48c5604d" />
+-Tablet(768px)
+<img width="823" height="889" alt="Screenshot 2025-09-26 095542" src="https://github.com/user-attachments/assets/da3907d0-2aad-4b5e-af2f-96163afe1393" />
+-Mobile(480)
+<img width="630" height="881" alt="Screenshot 2025-09-26 095131" src="https://github.com/user-attachments/assets/3cc1a737-00b2-4788-ad74-1e38c5b1e432" />
+
 
 ## References
 Mozilla Developer Network (MDN). (2025). *HTML: HyperText Markup Language*. Available at: https://developer.mozilla.org/en-US/docs/Web/HTML [Accessed 24 Sept. 2025].
