@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>EduAcademy — Enquiry</title>
+  <meta name="description" content="Enquire about volunteering, sponsorship or programme sign-up.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar container" role="navigation">
+      <a class="logo" href="index.html"><img src="assets/images/logo.png" alt="Logo" class="logo-img"><span class="brand">EduAcademy</span></a>
+      <button class="hamburger" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle menu">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="admissions.html">Admissions</a></li>
+        <li><a href="enquiry.html" class="active">Enquiry</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container content">
+    <h1>Enquiry</h1>
+    <p>Use this form to enquire about volunteering, sponsorship, or programme sign-up.</p>
+
+    <form id="enquiryForm" novalidate>
+      <label for="enq-name">Full name</label>
+      <input id="enq-name" name="name" type="text" required maxlength="100">
+
+      <label for="enq-email">Email</label>
+      <input id="enq-email" name="email" type="email" required>
+
+      <label for="enq-phone">Phone</label>
+      <input id="enq-phone" name="phone" type="tel" placeholder="+27 82 555 1234" required>
+
+      <label for="enq-type">Enquiry type</label>
+      <select id="enq-type" name="type" required>
+        <option value="">-- choose --</option>
+        <option value="volunteer">Volunteer</option>
+        <option value="sponsor">Sponsor</option>
+        <option value="signup">Programme sign-up</option>
+      </select>
+
+      <label for="enq-message">Message</label>
+      <textarea id="enq-message" name="message" rows="6" required></textarea>
+
+      <div id="enq-feedback" class="form-feedback" aria-live="polite"></div>
+
+      <button type="submit" class="btn">Submit Enquiry</button>
+    </form>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container legal">&copy; 2025 EduAcademy. All rights reserved.</div>
+  </footer>
+
+  <script src="js/lightbox.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/form-validation.js"></script>
+</body>
+</html>

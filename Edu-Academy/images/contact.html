@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>EduAcademy — Contact</title>
+  <meta name="description" content="Contact EduAcademy for support, questions or information.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar container" role="navigation">
+      <a class="logo" href="index.html"><img src="assets/images/logo.png" alt="Logo" class="logo-img"><span class="brand">EduAcademy</span></a>
+      <button class="hamburger" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle menu">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="admissions.html">Admissions</a></li>
+        <li><a href="enquiry.html">Enquiry</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container content">
+    <h1>Contact Us</h1>
+
+    <section>
+      <h2>Head Office</h2>
+      <p>80 Mare Street, Johannesburg, 2000</p>
+    </section>
+
+    <section>
+      <h2>Branch Office</h2>
+      <p>45 Community Road, Polokwane, 0700</p>
+    </section>
+
+    <section>
+      <h2>Send a message</h2>
+      <form id="contactForm" novalidate>
+        <label for="ct-name">Your name</label>
+        <input id="ct-name" name="name" type="text" required>
+
+        <label for="ct-email">Your email</label>
+        <input id="ct-email" name="email" type="email" required>
+
+        <label for="ct-type">Message type</label>
+        <select id="ct-type" name="type" required>
+          <option value="">-- choose --</option>
+          <option value="general">General question</option>
+          <option value="support">Support request</option>
+          <option value="feedback">Feedback</option>
+        </select>
+
+        <label for="ct-message">Message</label>
+        <textarea id="ct-message" name="message" rows="6" required></textarea>
+
+        <div id="ct-feedback" class="form-feedback" aria-live="polite"></div>
+
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </section>
+
+    <section>
+      <h2>Find us</h2>
+      <iframe src="https://maps.google.com/maps?q=Johannesburg&t=&z=11&ie=UTF8&iwloc=&output=embed" width="100%" height="300" style="border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container legal">&copy; 2025 EduAcademy. All rights reserved.</div>
+  </footer>
+
+  <script src="js/lightbox.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/form-validation.js"></script>
+</body>
+</html>
