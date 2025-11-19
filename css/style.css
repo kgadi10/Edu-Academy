@@ -1,0 +1,130 @@
+/* ===========================
+   css/style.css
+   Theme: Blue + White
+   Full Part 2 stylesheet (desktop + responsive)
+   Comments included to satisfy Part 1 feedback.
+   =========================== */
+
+/* CSS Reset */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+/* Root variables for easy theme tweaks */
+:root {
+  --brand-blue: #004080;
+  --accent: #ff6600;
+  --muted: #6b7280;
+  --bg: #ffffff;
+  --container-width: 1100px;
+  --radius: 10px;
+}
+
+/* Base typography */
+html { font-size: 16px; }
+body {
+  font-family: "Aptos", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  background: #f4f7fb;
+  color: #111827;
+  line-height: 1.5;
+}
+
+/* Helper container */
+.container {
+  width: calc(100% - 2.5rem);
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 1.25rem 0;
+}
+
+/* NAVIGATION (desktop + mobile) */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 0;
+  background: var(--brand-blue);
+  color: #fff;
+  position: relative;
+}
+
+/* Logo */
+.logo { display: flex; align-items: center; gap: 0.6rem; text-decoration: none; color: #fff; }
+.logo-img { width: 44px; height: 44px; object-fit: contain; border-radius: 8px; }
+.brand { font-weight: 700; font-size: 1.125rem; }
+
+/* Nav links */
+.nav-links { display: flex; gap: 1rem; list-style: none; align-items: center; }
+.nav-links a { color: #fff; text-decoration: none; padding: 0.35rem 0.6rem; font-weight: 600; position: relative; }
+
+/* Underline hover animation (chosen style) */
+.nav-links a::after {
+  content: ''; position: absolute; left: 0; bottom: -4px; height: 2px; width: 0; background: #fff; transition: width .22s ease;
+}
+.nav-links a:hover::after, .nav-links a.active::after { width: 100%; }
+
+/* Hamburger button (hidden on desktop) */
+.hamburger { display: none; background: none; border: none; color: #fff; font-size: 1.4rem; cursor: pointer; }
+
+/* HERO (grid: text + image) */
+.hero { display: grid; grid-template-columns: 1fr 480px; gap: 1.5rem; align-items: center; padding: 2.25rem 0; background: linear-gradient(180deg, rgba(0,64,128,0.03), transparent); }
+.hero-text h1 { color: var(--brand-blue); font-size: 2rem; margin-bottom: 0.5rem; }
+.hero-text p { color: var(--muted); margin-bottom: 0.75rem; }
+.hero-img { width: 100%; border-radius: var(--radius); display: block; object-fit: cover; }
+
+/* Buttons */
+.btn { display: inline-block; padding: 0.6rem 1rem; border-radius: 8px; background: var(--brand-blue); color: #fff; text-decoration: none; font-weight: 700; }
+.btn-outline { background: transparent; border: 2px solid var(--brand-blue); color: var(--brand-blue); padding: 0.5rem 0.9rem; }
+
+/* FEATURES / CARDS */
+.features-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-top: 1rem; }
+.feature-card, .service-card { background: #fff; padding: 1rem; border-radius: 8px; box-shadow: 0 8px 20px rgba(2,6,23,0.06); }
+.feature-card h3 { color: var(--brand-blue); margin-bottom: 0.5rem; }
+
+/* FORMS */
+form { background: #fff; padding: 1rem; border-radius: 8px; box-shadow: 0 8px 20px rgba(2,6,23,0.04); max-width: 700px; margin: 1rem auto; }
+label { display: block; margin-top: 0.5rem; font-weight: 700; }
+input, select, textarea { width: 100%; padding: 0.6rem; border: 1px solid #E6E7EB; border-radius: 6px; margin-top: 0.35rem; }
+
+/* Form feedback (JS updates content here) */
+.form-feedback { margin-top: 0.5rem; font-weight: 700; }
+
+/* FOOTER */
+.footer-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; padding: 1.5rem 0; }
+.legal { text-align: center; color: var(--muted); padding: 0.75rem 0; }
+
+/* ACCORDIONS */
+.accordion-btn { width: 100%; text-align: left; background: #f3f4f6; border: none; padding: 0.65rem 0.75rem; cursor: pointer; font-weight:700; border-radius:6px; margin-top:0.5rem; }
+.accordion-panel { display: none; padding: 0.65rem 0.75rem; background: #fff; border-radius: 6px; margin-top: 0.5rem; }
+.accordion-panel.open { display: block; }
+
+/* GALLERY (lightbox) */
+.gallery { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-top: 0.5rem; }
+.gallery-thumb { width: calc(33.333% - 0.33rem); cursor: pointer; border-radius: 8px; object-fit: cover; }
+@media (max-width: 768px) { .gallery-thumb { width: calc(50% - 0.25rem); } }
+
+/* LIGHTBOX class created by JS - basic styles included here */
+.lightbox { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.85); align-items: center; justify-content: center; z-index: 2000; }
+.lightbox img { max-width: 90%; max-height: 80%; border-radius: 10px; }
+
+/* RESPONSIVE: breakpoints */
+/* Tablet */
+@media (max-width: 900px) {
+  .hero { grid-template-columns: 1fr; text-align: center; }
+  .features-grid { grid-template-columns: repeat(2, 1fr); }
+  .services-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .nav-links { display: none; position: absolute; top: 64px; right: 0; background: var(--brand-blue); width: 260px; padding: 0.75rem; flex-direction: column; gap: 0.5rem; z-index: 50; border-bottom-left-radius:8px; }
+  .nav-links.show { display: flex; }
+  .hamburger { display: block; }
+  .features-grid, .services-grid { grid-template-columns: 1fr; }
+  .hero-img { margin-top: 1rem; max-height: 260px; object-fit: cover; }
+}
+
+/* Small phone */
+@media (max-width: 480px) {
+  html { font-size: 14px; }
+  .brand { font-size: 1rem; }
+  .hero-text h1 { font-size: 1.4rem; }
+}

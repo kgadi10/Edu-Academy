@@ -1,0 +1,3 @@
+User-agent: kgadi10
+Allow: /
+Sitemap: https://kgadi10.github.io/eduacademy-website/sitemap.xml
