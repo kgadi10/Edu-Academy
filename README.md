@@ -36,3 +36,53 @@ Mozilla Developer Network (MDN). (2025). *CSS: Cascading Style Sheets*. Availabl
 
 W3Schools. (2025). *Responsive Web Design Tutorial*. Available at: https://www.w3schools.com/css/css_rwd_intro.asp [Accessed 24 Sept. 2025].
 
+##Changelog part 2:
+**Navigation and Layout Fixes:**
+   - Corrected folder structure for better organization.
+   - Ensured all HTML files link correctly to CSS and JavaScript files.
+   - Fixed broken navigation links across pages.
+
+2. **Responsive Design:**
+   - Optimized layout for mobile, tablet, and desktop screens.
+   - Ensured images and text scale correctly using CSS media queries.
+
+## Part 3 Submission Requirements Completed
+To meet Part 3 submission requirements, the following were included:
+
+1. **Deployment:**
+   - GitHub repository created for version control.
+   - Live site deployed on Netlify for external access.
+
+2. **Documentation:**
+   - Complete `README.md` file with project overview, folder structure, features, and references.
+   - Clear instructions on running the project locally.
+   3. **Code Quality:**
+   - Properly structured HTML, CSS, and JavaScript files.
+   - Consistent naming conventions for files and folders.
+   - Comments added in JavaScript for clarity.
+## Features
+- **Home Page:** Overview of EduAcademy, mission, and vision.
+- **About Us Page:** Information about the school, history, and staff.
+- **Programs Page:** Details of available programs and courses.
+- **News and Events:** Updates on school events and announcements.
+- **Contact Page:** Contact form with Google Maps integration for location.
+- **Interactive Elements:** Accordions, tabs, and modals implemented via JavaScript.
+- **Responsive Design:** Optimized for mobile, tablet, and desktop.
+- **SEO Ready:** Includes `robots.txt` and `sitemap.xml`.
+
+
+## References
+Mozilla Developer Network (MDN). (2025). *HTML: HyperText Markup Language*. Available at: https://developer.mozilla.org/en-US/docs/Web/HTML [Accessed 24 Sept. 2025].
+
+Mozilla Developer Network (MDN). (2025). *CSS: Cascading Style Sheets*. Available at: https://developer.mozilla.org/en-US/docs/Web/CSS [Accessed 24 Sept. 2025].
+
+W3Schools. (2025). *Responsive Web Design Tutorial*. Available at: https://www.w3schools.com/css/css_rwd_intro.asp [Accessed 24 Sept. 2025].
+<<<<<<< Updated upstream
+
+Google Developers. (2025). Google Maps JavaScript API. Available at: https://developers.google.com/maps/documentation/javascript/tutorial
+ [Accessed 19 Nov. 2025].
+
+Netlify Docs. (2025). Deploy a Site. Available at: https://docs.netlify.com/site-deploys/overview/
+ [Accessed 19 Nov. 2025].
+
+
